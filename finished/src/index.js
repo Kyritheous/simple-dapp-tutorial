@@ -30,6 +30,8 @@ The `piggybankContract` is compiled from:
 
 import { encrypt } from 'eth-sig-util'
 import MetaMaskOnboarding from '@metamask/onboarding'
+import Web3 from 'web3';
+const web3 = new Web3('ws://localhost:8546');
 
 const currentUrl = new URL(window.location.href)
 const forwarderOrigin = currentUrl.hostname === 'localhost'
